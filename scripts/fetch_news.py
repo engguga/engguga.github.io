@@ -136,27 +136,26 @@ def fetch_rss(feed_url: str) -> list[dict]:
 
 
 def call_claude(prompt: str, max_tokens: int = 1800) -> str:
-    """Chama a API da Anthropic e retorna o texto gerado."""
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    """Chama a API do Groq (Llama 3.3-70B) e retorna o texto gerado."""
+    api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
-        raise RuntimeError("ANTHROPIC_API_KEY não encontrada nas variáveis de ambiente.")
+        raise RuntimeError("GROQ_API_KEY não encontrada nas variáveis de ambiente.")
 
     import json as _json
     import urllib.request as _req
 
     body = _json.dumps({
-        "model": "claude-sonnet-4-20250514",
+        "model": "llama-3.3-70b-versatile",
         "max_tokens": max_tokens,
         "messages": [{"role": "user", "content": prompt}],
     }).encode()
 
     request = _req.Request(
-        "https://api.anthropic.com/v1/messages",
+        "https://api.groq.com/openai/v1/chat/completions",
         data=body,
         headers={
             "Content-Type": "application/json",
-            "x-api-key": api_key,
-            "anthropic-version": "2023-06-01",
+            "Authorization": f"Bearer {api_key}",
         },
         method="POST",
     )
@@ -164,7 +163,7 @@ def call_claude(prompt: str, max_tokens: int = 1800) -> str:
     with _req.urlopen(request, timeout=60) as resp:
         data = _json.loads(resp.read())
 
-    return data["content"][0]["text"].strip()
+    return data["choices"][0]["message"]["content"].strip()
 
 
 def generate_post(article: dict, source: str, topics: list[str]) -> dict:
