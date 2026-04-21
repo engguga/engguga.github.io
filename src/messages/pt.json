@@ -1,34 +1,34 @@
 {
   "nav": {
-    "about":    "Sobre",
+    "about": "Sobre",
     "projects": "Projetos",
     "research": "Pesquisa",
-    "blog":     "Newsletter",
-    "books":    "Leituras",
-    "contact":  "Contato"
+    "blog": "Newsletter",
+    "books": "Leituras",
+    "contact": "Contato"
   },
   "hero": {
-    "greeting":    "Olá, sou",
-    "name":        "Gustavo Viana",
-    "title":       "Engenheiro de Software & Pesquisador em Segurança",
+    "greeting": "Olá, sou",
+    "name": "Gustavo Viana",
+    "title": "Engenheiro de Software & Pesquisador em Segurança",
     "description": "Construo sistemas seguros na interseção entre IA e segurança ofensiva. Pesquisador independente e engenheiro focado em impacto real.",
     "cta_projects": "Ver Projetos",
     "cta_research": "Ler Artigos",
-    "cta_contact":  "Entrar em Contato",
-    "location":     "Bahia, Brasil",
-    "status":       "Disponível para oportunidades"
+    "cta_contact": "Entrar em Contato",
+    "location": "Bahia, Brasil",
+    "status": "Disponível para oportunidades"
   },
   "about": {
-    "label":   "Sobre",
-    "title":   "Quem sou eu",
-    "body_1":  "Sou estudante de Engenharia de Software na Anhanguera Educacional, com previsão de formatura em janeiro de 2029. Desde cedo desenvolvi um interesse profundo por cibersegurança — não apenas como carreira, mas como forma de pensar sobre sistemas, falhas e confiança.",
-    "body_2":  "Meu trabalho transita entre engenharia de software aplicada e pesquisa em segurança. Desenvolvo ferramentas que resolvem problemas reais: desde detecção de phishing e análise de URLs maliciosas até simulações de ataques corporativos e avaliações de infraestrutura governamental.",
-    "body_3":  "Tenho um foco crescente em Segurança de IA — especificamente em como grandes modelos de linguagem podem ser manipulados e como construir defesas práticas contra isso. Minha pesquisa mais recente propõe e valida empiricamente o SPEF Framework, uma arquitetura de quatro camadas para proteger sistemas baseados em LLMs.",
-    "body_4":  "Acredito que segurança de alto nível exige tanto profundidade técnica quanto clareza de comunicação. Por isso também escrevo: artigos, análises e conteúdo técnico que tornam temas complexos acessíveis sem perder o rigor.",
+    "label": "Sobre",
+    "title": "Quem sou eu",
+    "body_1": "Sou estudante de Engenharia de Software, com previsão de formatura em janeiro de 2029. Desde cedo desenvolvi um interesse profundo por cibersegurança — não apenas como carreira, mas como forma de pensar sobre sistemas, falhas e confiança.",
+    "body_2": "Meu trabalho transita entre engenharia de software aplicada e pesquisa em segurança. Desenvolvo ferramentas que resolvem problemas reais: desde detecção de phishing e análise de URLs maliciosas até simulações de ataques corporativos e avaliações de infraestrutura governamental.",
+    "body_3": "Tenho um foco crescente em Segurança de IA — especificamente em como grandes modelos de linguagem podem ser manipulados e como construir defesas práticas contra isso. Minha pesquisa mais recente propõe e valida empiricamente o SPEF Framework, uma arquitetura de quatro camadas para proteger sistemas baseados em LLMs.",
+    "body_4": "Acredito que segurança de alto nível exige tanto profundidade técnica quanto clareza de comunicação. Por isso também escrevo: artigos, análises e conteúdo técnico que tornam temas complexos acessíveis sem perder o rigor.",
     "skills_label": "Stack & Ferramentas",
     "education_label": "Formação",
     "education_degree": "Bacharelado em Engenharia de Software",
-    "education_institution": "Anhanguera Educacional",
+    "education_institution": "",
     "education_period": "2025 – Jan 2029"
   },
   "projects": {
@@ -36,7 +36,7 @@
     "title": "O que eu construo",
     "subtitle": "Projetos que resolvem problemas reais na interseção de segurança, engenharia e experiência do usuário.",
     "view_project": "Ver Projeto",
-    "view_code":    "Ver Código",
+    "view_code": "Ver Código",
     "items": [
       {
         "id": "phishguard",
@@ -44,7 +44,12 @@
         "tagline": "Análise de URLs em tempo real",
         "description": "Ferramenta de detecção de phishing que analisa URLs e retorna um score de risco 0–100 baseado em múltiplos fatores: entropia de Shannon, WHOIS, TLDs suspeitos, palavras-chave maliciosas e ausência de HTTPS. Interface responsiva com dark mode e histórico de sessão.",
         "problem": "URLs maliciosas são a principal porta de entrada para ataques de phishing. Sem uma ferramenta acessível de análise rápida, usuários e equipes de segurança dependem de intuição para identificar ameaças.",
-        "stack": ["Python", "Flask", "JavaScript", "CSS"],
+        "stack": [
+          "Python",
+          "Flask",
+          "JavaScript",
+          "CSS"
+        ],
         "url": "https://phishguard-ten-eta.vercel.app",
         "github": "https://github.com/engguga/PhishGuard"
       },
@@ -54,7 +59,13 @@
         "tagline": "URL shortener de alta performance",
         "description": "Motor de encurtamento de URLs com arquitetura full-stack moderna, codificação Base62 customizada, analytics em tempo real e suporte a três idiomas (pt-BR, EN, ES). Dashboard com as rotas mais acessadas e tratamento elegante de erros.",
         "problem": "URLs longas são difíceis de compartilhar, rastrear e analisar. O Hermes resolve isso com um sistema rápido, escalável e internacionalizado — demonstrando arquitetura de software bem projetada.",
-        "stack": ["Java 17", "Spring Boot 3", "React", "TypeScript", "PostgreSQL"],
+        "stack": [
+          "Java 17",
+          "Spring Boot 3",
+          "React",
+          "TypeScript",
+          "PostgreSQL"
+        ],
         "url": "https://hermes-project-nine.vercel.app",
         "github": "https://github.com/engguga/hermes-project"
       },
@@ -64,7 +75,10 @@
         "tagline": "Validação e análise de telefones",
         "description": "Plataforma para validação e análise de números de telefone com foco em prevenção de fraudes. Identifica padrões suspeitos, classifica números por risco e aumenta a segurança em interações digitais.",
         "problem": "Números de telefone falsos ou suspeitos são amplamente usados em golpes e fraudes digitais. O Número Seguro oferece uma camada de verificação acessível para usuários e sistemas.",
-        "stack": ["Go", "JavaScript"],
+        "stack": [
+          "Go",
+          "JavaScript"
+        ],
         "url": "https://numero-seguro.vercel.app",
         "github": "https://github.com/engguga"
       }
@@ -75,28 +89,39 @@
     "title": "Publicações",
     "subtitle": "Pesquisa acadêmica independente em engenharia de software com foco em segurança aplicada.",
     "download_pdf": "Baixar PDF",
-    "view_zenodo":  "Ver no Zenodo",
-    "read_more":    "Ler mais",
+    "view_zenodo": "Ver no Zenodo",
+    "read_more": "Ler mais",
     "items": [
       {
         "id": "spef",
         "year": "2026",
         "title": "Secure Prompt Engineering: A Practical Framework for Mitigating Prompt Injection and Data Leakage in LLM-based Systems",
         "abstract": "Este trabalho propõe e valida empiricamente o SPEF (Secure Prompt Engineering Framework), uma arquitetura defensiva de quatro camadas para sistemas baseados em LLMs. O experimento controlado com Llama-3.3-70B demonstra redução de 86,4% na taxa de sucesso de ataques adversariais — de 17,6% para 2,4%.",
-        "topics": ["LLM Security", "Prompt Injection", "AI Safety", "Adversarial NLP"],
+        "topics": [
+          "LLM Security",
+          "Prompt Injection",
+          "AI Safety",
+          "Adversarial NLP"
+        ],
         "zenodo": "https://zenodo.org/records/17536561",
         "pdf": "/pdfs/Viana_SPEF_Framework_LLM_Security.pdf",
-        "institution": "Anhanguera Educacional"
+        "institution": ""
       },
       {
         "id": "municipal",
         "year": "2025",
         "title": "Security Posture Assessment of Brazilian Municipal Web Portals",
         "abstract": "Análise de segurança abrangente de 27 portais municipais brasileiros (26 capitais + Distrito Federal), avaliando configurações SSL/TLS, implementação de cabeçalhos de segurança e padrões de exposição de serviços. Apenas 22,2% implementam HSTS; 44,4% operam com SSL/TLS subótimo.",
-        "topics": ["Cybersecurity", "E-Government", "SSL/TLS", "Web Security", "Brazil"],
+        "topics": [
+          "Cybersecurity",
+          "E-Government",
+          "SSL/TLS",
+          "Web Security",
+          "Brazil"
+        ],
         "zenodo": "https://doi.org/10.5281/zenodo.19614586",
         "pdf": "/pdfs/Viana_Brazilian_Municipal_Security_Assessment_2025.pdf",
-        "institution": "Anhanguera Educacional"
+        "institution": ""
       }
     ]
   },
@@ -104,12 +129,12 @@
     "label": "Newsletter",
     "title": "Newsletter",
     "subtitle": "Notícias, análises e reflexões sobre segurança, IA e engenharia de software — curadas e comentadas.",
-    "read_post":     "Ler",
-    "min_read":      "min de leitura",
-    "all_posts":     "Ver tudo",
-    "back_to_blog":  "Voltar",
-    "no_posts":      "Em breve. Primeiras edições chegando.",
-    "by":            "por"
+    "read_post": "Ler",
+    "min_read": "min de leitura",
+    "all_posts": "Ver tudo",
+    "back_to_blog": "Voltar",
+    "no_posts": "Em breve. Primeiras edições chegando.",
+    "by": "por"
   },
   "books": {
     "label": "Leituras",
@@ -123,7 +148,12 @@
         "year": "2008",
         "publisher": "No Starch Press",
         "description": "O livro mais honesto sobre hacking que existe. Erickson não te ensina ferramentas — ele te ensina a pensar como um atacante a nível de memória, shellcode e exploração de buffer overflow. Leitura obrigatória para quem quer entender segurança de verdade, não apenas executar scripts.",
-        "topics": ["Exploit Development", "Buffer Overflow", "Shellcode", "Assembly"],
+        "topics": [
+          "Exploit Development",
+          "Buffer Overflow",
+          "Shellcode",
+          "Assembly"
+        ],
         "level": "Avançado"
       },
       {
@@ -133,7 +163,12 @@
         "year": "2021",
         "publisher": "No Starch Press",
         "description": "Python aplicado ao lado ofensivo da segurança: criação de ferramentas de pentest, sniffers de rede, trojans, fuzzers e exploração de vulnerabilidades. Direto, prático e sem rodeios. A segunda edição está completamente atualizada para Python 3.",
-        "topics": ["Pentest", "Python", "Network Security", "Offensive Security"],
+        "topics": [
+          "Pentest",
+          "Python",
+          "Network Security",
+          "Offensive Security"
+        ],
         "level": "Intermediário"
       },
       {
@@ -143,23 +178,29 @@
         "year": "2011",
         "publisher": "Wiley",
         "description": "A bíblia da segurança em aplicações web. Cobre todos os vetores de ataque relevantes — SQL Injection, XSS, CSRF, controle de acesso falho, lógica de negócio — com profundidade técnica real. Mesmo sendo de 2011, os fundamentos são válidos e continuam ensinados em cursos de OWASP.",
-        "topics": ["Web Security", "OWASP", "SQL Injection", "XSS", "CSRF"],
+        "topics": [
+          "Web Security",
+          "OWASP",
+          "SQL Injection",
+          "XSS",
+          "CSRF"
+        ],
         "level": "Intermediário"
       }
     ]
   },
   "contact": {
-    "label":    "Contato",
-    "title":    "Vamos conversar",
+    "label": "Contato",
+    "title": "Vamos conversar",
     "subtitle": "Estou aberto a conversas sobre segurança, IA, projetos colaborativos ou oportunidades.",
-    "email":    "Email",
-    "github":   "GitHub",
+    "email": "Email",
+    "github": "GitHub",
     "linkedin": "LinkedIn",
-    "medium":   "Medium",
-    "instagram":"Instagram"
+    "medium": "Medium",
+    "instagram": "Instagram"
   },
   "footer": {
     "built_with": "Construído com Next.js e Tailwind CSS.",
-    "rights":     "Todos os direitos reservados."
+    "rights": "Todos os direitos reservados."
   }
 }
